@@ -505,8 +505,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1499507907}
-        m_TargetAssemblyTypeName: HealthTuning, Assembly-CSharp
+      - m_Target: {fileID: 1499507908}
+        m_TargetAssemblyTypeName: PlayerHealth, Assembly-CSharp
         m_MethodName: DoDamage
         m_Mode: 1
         m_Arguments:
@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 1499507904}
   - component: {fileID: 1499507903}
   - component: {fileID: 1499507907}
+  - component: {fileID: 1499507908}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -746,6 +747,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBarImage: {fileID: 981600188}
+  _playerHealth: {fileID: 1499507908}
+--- !u!114 &1499507908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499507902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae80feee9b7bc24a8c0867d89287920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 50
 --- !u!1 &1681130552
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,8 +863,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.067291364, y: 0.4536129}
   m_AnchorMax: {x: 0.33400002, y: 0.537}
-  m_AnchoredPosition: {x: -2, y: 2}
-  m_SizeDelta: {x: 7.130005, y: 5.41}
+  m_AnchoredPosition: {x: -1.9999695, y: 0}
+  m_SizeDelta: {x: 7.13, y: -0.0000038147}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1745201953
 MonoBehaviour:
@@ -895,8 +910,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1499507907}
-        m_TargetAssemblyTypeName: HealthTuning, Assembly-CSharp
+      - m_Target: {fileID: 1499507908}
+        m_TargetAssemblyTypeName: PlayerHealth, Assembly-CSharp
         m_MethodName: Regeneration
         m_Mode: 1
         m_Arguments:
